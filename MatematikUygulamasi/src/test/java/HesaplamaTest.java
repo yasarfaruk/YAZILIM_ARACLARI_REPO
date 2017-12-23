@@ -1,19 +1,12 @@
 
-import java.util.Scanner;
+import static org.junit.Assert.assertEquals;
 
+import org.junit.Test;
 public class HesaplamaTest {
-
+	@Test
+	public void testFibonacciHesap5() {
+		int gerceksonuc=Hesaplama.fibonacciHesap(5);
+		assertEquals(3,gerceksonuc);
+	}
 	
-	public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int say1,say2;
-        System.out.println("1. Sayýyý Giriniz: ");
-        say1 = input.nextInt();
-        System.out.println("2. Sayýyý Giriniz: ");
-        say2 = input.nextInt();
-        int sonuc=say1*say2;
-        System.out.println(say1 + "*" + say2 + "=" + sonuc);
-        
-        
-    }
 }
