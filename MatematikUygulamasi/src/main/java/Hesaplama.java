@@ -1,22 +1,23 @@
+import java.util.Scanner;
 
 public class Hesaplama {
-
-	public static void main (String[] args) {
-		int elemanSayisi = 5;		
-		int[]dizi=new int[elemanSayisi];
-		dizi[0]=0;
-		dizi[1]=1;
-		for(int i=2;i<elemanSayisi;i++) {
-			dizi[i]=dizi[i-1]+dizi[i-2];
-		}
-		for(int i=0;i<elemanSayisi;i++) {
-			System.out.println(dizi[i]+" ");
-		}
-		}
-		public static int fibonacciHesap(int elemanSayisi) {
-			return elemanSayisi;
-			
-		}
+	/**
+	 * carpma islemi yapýlacak.
+	 * @param say1 ve say2 seklinde iki sayi istenecek ve girilen iki sayýyý carpýp sonucu bulacak.
+	 */
+	
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int say1,say2;
+        System.out.println("1. Sayýyý Giriniz: ");
+        say1 = input.nextInt();
+        System.out.println("2. Sayýyý Giriniz: ");
+        say2 = input.nextInt();
+        int sonuc=say1*say2;
+        System.out.println(say1 + "*" + say2 + "=" + sonuc);
+        
+        
+    }
 }
 
 	
