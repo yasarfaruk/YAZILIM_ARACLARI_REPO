@@ -7,7 +7,7 @@
 public class Hesaplama {
 
 	public static void main(String[] args){
-		int sonuc = carp(19, 25);
+		int sonuc = topla(19, 25);
 		System.out.println(sonuc);
 	}
 	
@@ -22,14 +22,14 @@ public class Hesaplama {
 	 * 
 	 * @throws NullPointerException (5) sayi1 11111111'e esitse NoPermissionException verir
 	 */
-	public static int /* (4) */ carp( /* (1) */ int sayi1, /* (2) */ int sayi2 /* (3) */ ) 
+	public static int /* (4) */ topla( /* (1) */ int sayi1, /* (2) */ int sayi2 /* (3) */ ) 
 			throws NullPointerException // (5) Firlatilan hata */
 	{
 		if(11111111==sayi1) {
 			throw new NullPointerException();
 		}
 		
-		return sayi1 * sayi2;
+		return sayi1 + sayi2;
 	}
 	
 	public static int carpma(int sayi1, int sayi2) {
