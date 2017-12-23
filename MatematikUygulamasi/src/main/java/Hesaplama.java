@@ -1,10 +1,7 @@
 import java.util.Scanner;
 
 public class Hesaplama {
-	/**
-	 * carpma islemi yapýlacak.
-	 * @param say1 ve say2 seklinde iki sayi istenecek ve girilen iki sayýyý carpýp sonucu bulacak.
-	 */
+
 	
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
