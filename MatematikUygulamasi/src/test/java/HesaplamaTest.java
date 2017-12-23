@@ -1,16 +1,19 @@
+
+import java.util.Scanner;
+
 public class HesaplamaTest {
 
+	
 	public static void main(String[] args) {
-		int sonuc = karekok(0);
-		
-	}
-	
-	
-	public static int karekok(int sayi1) {
-		    double sayi = 99;
-	        String Karekok = Double.toString(Math.sqrt(sayi));
-	        System.out.println("Karekok: " + Karekok);
-			return sayi1;
-	}
-	
+        Scanner input = new Scanner(System.in);
+        int say1,say2;
+        System.out.println("1. Sayýyý Giriniz: ");
+        say1 = input.nextInt();
+        System.out.println("2. Sayýyý Giriniz: ");
+        say2 = input.nextInt();
+        int sonuc=say1*say2;
+        System.out.println(say1 + "*" + say2 + "=" + sonuc);
+        
+        
+    }
 }
